@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_BASEURL || "https://metrosolver-hr-dashboard-backend.onrender.com/api",
+  baseURL: import.meta.env.VITE_BASEURL || "http://localhost:3000",
 });
 
 API.interceptors.request.use((config) => {
